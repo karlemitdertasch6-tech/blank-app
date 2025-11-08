@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_KEY = ""
+API_KEY = st.secrets["API_KEY"]
 CITY = "Karlsruhe"
 URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
 
